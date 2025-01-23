@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+font-family: 'Orbitron', sans-serif; /* Military-styled font */
+margin: 0;
+padding: 0;
+background-color: #0b132b; /* Dark, futuristic backdrop */
+color: #e4e5e9; /* Subtle off-white for readability */
+}
+
+h1, h2, h3 {
+color: #fdb813; /* Bright yellow for bold titles */
+text-transform: uppercase;
+letter-spacing: 2px;
+text-shadow: 2px 2px 5px #000;
+}
+
+a {
+text-decoration: none;
+color: #fdb813;
+font-weight: bold;
+}
+
+a:hover {
+color: #f8e71c; /* Slightly brighter yellow */
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+button {
+background-color: #fdb813;
+color: #0b132b;
+font-weight: bold;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+text-transform: uppercase;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #f8e71c;
+}
+
+/* Navigation */
+nav {
+background-color: #14213d; /* Dark navy for military tone */
+padding: 15px 20px;
+border-bottom: 3px solid #fdb813; /* Democratic yellow border */
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+
+nav ul li {
+list-style: none;
+}
+
+nav ul li a {
+color: #e4e5e9;
+font-size: 1.2rem;
+letter-spacing: 1px;
+}
+
+/* Blog List */
+.blog-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+padding: 30px;
+}
+
+/* Blog Card */
+.blog-card {
+background: #14213d;
+border: 2px solid #fdb813;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+transform: scale(1.05);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.blog-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-bottom: 2px solid #fdb813;
+}
+
+.blog-card .blog-details {
+padding: 20px;
+}
+
+.blog-card h2 {
+font-size: 1.6rem;
+margin: 0 0 10px;
+color: #fdb813;
+}
+
+.blog-card p {
+font-size: 1rem;
+margin: 0 0 15px;
+line-height: 1.6;
+color: #e4e5e9;
+}
+
+.blog-card .read-more {
+font-size: 0.9rem;
+font-weight: bold;
+color: #fdb813;
+text-transform: uppercase;
+}
+
+/* Blog Post */
+.blog-post {
+max-width: 800px;
+margin: 30px auto;
+padding: 30px;
+background: #14213d;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.blog-post img {
+width: 100%;
+height: 350px;
+object-fit: cover;
+border-radius: 12px;
+margin-bottom: 20px;
+border: 3px solid #fdb813;
+}
+
+.blog-post h1 {
+margin-bottom: 10px;
+color: #fdb813;
+}
+
+.blog-post p {
+font-size: 1.1rem;
+line-height: 1.8;
+}
+
+/* Comment Section */
+.comment-section {
+margin-top: 30px;
+}
+
+.comment-section h3 {
+margin-bottom: 15px;
+color: #fdb813;
+}
+
+.comment-section ul {
+margin-bottom: 15px;
+}
+
+.comment-section textarea {
+width: 100%;
+height: 120px;
+padding: 10px;
+margin-bottom: 15px;
+border: 2px solid #fdb813;
+border-radius: 5px;
+resize: none;
+background-color: #0b132b;
+color: #e4e5e9;
+}
+
+.comment-section button {
+float: right;
+}
+
+/* Search Bar */
+input[type="text"] {
+width: 100%;
+max-width: 400px;
+padding: 12px;
+margin: 20px auto;
+display: block;
+border: 2px solid #fdb813;
+border-radius: 5px;
+font-size: 1rem;
+background-color: #0b132b;
+color: #e4e5e9;
+}
+
+/* Footer */
+footer {
+background-color: #14213d;
+color: #e4e5e9;
+text-align: center;
+padding: 20px 0;
+margin-top: 20px;
+border-top: 3px solid #fdb813;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+nav ul {
+flex-direction: column;
+gap: 15px;
+}
+
+.blog-post img {
+height: auto;
+}
+}
+
+/* Navbar Styles */
+.navbar {
+background-color: #14213d; /* Dark navy background */
+padding: 10px 20px;
+border-bottom: 3px solid #fdb813; /* Democratic yellow border */
+}
+
+.navbar-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar-logo-link {
+display: flex;
+align-items: center;
+}
+
+.navbar-logo {
+position: relative;    
+height: 40px; /* Adjust as needed */
+width: auto; /* Maintain aspect ratio */
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.navbar-logo:hover {
+transform: scale(1.3);
+}
+
+.navbar-links {
+display: flex;
+gap: 20px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.navbar-links li {
+display: inline-block;
+}
+
+.navbar-links a {
+color: #e4e5e9; /* Light text color */
+text-decoration: none;
+font-size: 1.1rem;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+.navbar-links a:hover {
+color: #fdb813; /* Highlight effect on hover */
+}
